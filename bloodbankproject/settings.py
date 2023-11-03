@@ -134,6 +134,7 @@ MEDIA_URL = 'img/'
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
 CRISPY_TEMPLATE_PACK = "bootstrap4"
 
+#Applies majorly for the doctor's section
 LOGIN_REDIRECT_URL = 'home'
 LOGIN_URL = 'home'
 
