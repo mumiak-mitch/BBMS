@@ -9,7 +9,8 @@
 header {
     text-align: center;
     background: salmon;
-    padding: 40px; /* Reduced padding for a more balanced look */
+    padding: 40px;
+    /* Reduced padding for a more balanced look */
 }
 
 /* Style the navigation menu */
@@ -25,30 +26,39 @@ nav a {
 }
 
 nav ul {
-    list-style-type: none; /* Apply list styles to the entire ul element */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    list-style-type: none;
+    /* Apply list styles to the entire ul element */
+    margin: 0;
+    /* Remove default margin */
+    padding: 0;
+    /* Remove default padding */
 }
 
 nav li {
     display: inline;
     font-size: 20px;
-    margin-right: 20px; /* Add spacing between navigation items */
+    margin-right: 20px;
+    /* Add spacing between navigation items */
 }
 
 /* Style the main content */
 main {
-    padding-top: 20px; /* Increased padding for better spacing */
+    padding-top: 20px;
+    /* Increased padding for better spacing */
+    padding-right: 10px;
 }
 
 main h2 {
     text-align: center;
-    font-size: 24px; /* Increased font size for the heading */
-    margin-bottom: 20px; /* Add spacing below the heading */
+    font-size: 24px;
+    /* Increased font size for the heading */
+    margin-bottom: 20px;
+    /* Add spacing below the heading */
 }
 
 main p {
-    line-height: 1.5; /* Improved line-height for better readability */
+    line-height: 1.5;
+    /* Improved line-height for better readability */
 }
 
 /* Style the footer */
@@ -56,30 +66,40 @@ footer {
     background: black;
     color: white;
     text-align: center;
-    padding: 30px; /* Reduced padding for a more balanced look */
-    font-size: 18px; /* Slightly reduced font size */
-    letter-spacing: 3px; /* Reduced letter spacing for better legibility */
+    padding: 30px;
+    /* Reduced padding for a more balanced look */
+    font-size: 18px;
+    /* Slightly reduced font size */
+    letter-spacing: 3px;
+    /* Reduced letter spacing for better legibility */
 }
 
 footer a {
     color: whitesmoke;
-    text-decoration: underline; /* Add underlines to links for better visibility */
+    text-decoration: underline;
+    /* Add underlines to links for better visibility */
 }
 
 /* Style the footer links to be in a row */
 footer ul {
-    display: flex; /* Display list items in a horizontal row */
-    justify-content: center; /* Center-align the links */
-    margin: 10px 0; /* Add spacing above and below the links */
-    background: black; /* Set the background color to black */
+    display: flex;
+    /* Display list items in a horizontal row */
+    justify-content: center;
+    /* Center-align the links */
+    margin: 10px 0;
+    /* Add spacing above and below the links */
+    background: black;
+    /* Set the background color to black */
     list-style-type: none;
 }
 
 footer ul li {
-    margin: 0 15px; /* Add spacing between the links */
+    margin: 0 15px;
+    /* Add spacing between the links */
 }
 
 /* Style the footer author information */
 footer p {
-    margin-top: 10px; /* Add spacing above the author information */
+    margin-top: 10px;
+    /* Add spacing above the author information */
 }
