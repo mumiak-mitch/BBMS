@@ -9,7 +9,7 @@ This is a Blood Bank Management System built using Django. It helps manage blood
 ## Table of Contents
 
 - [Features](#features)
-- [Functions] (#functions)
+- [Functions](#functions)
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Configuration](#configuration)

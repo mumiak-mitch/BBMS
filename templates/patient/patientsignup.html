@@ -1,10 +1,9 @@
-{%load static%}
+{% load static %}
 {% load widget_tweaks %}
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -15,10 +14,8 @@
         rel="stylesheet">
 
     <!-- Main CSS-->
-
-    <link href="{% static " css/main.css" %}"rel="stylesheet" media="all">
+    <link href="{% static 'css/main.css' %}" rel="stylesheet" media="all">
     <style>
-
     </style>
 </head>
 
@@ -33,6 +30,17 @@
                     <h2 class="title">Patient Signup</h2>
                 </div>
                 <div class="card-body">
+                    {% if userForm.errors %}
+                    <div class="alert alert-danger">
+                        <strong>Error!</strong> Please correct the following errors:
+                        <ul>
+                            {% for field, error in userForm.errors.items %}
+                            <li>{{ field }}: {{ error|striptags }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% endif %}
+
                     <form method="POST" autocomplete="off" enctype="multipart/form-data">
                         {% csrf_token %}
 
@@ -118,8 +126,7 @@
                             <div class="name">Doctor Name</div>
                             <div class="value">
                                 <div class="input-group">
-                                    {% render_field patientForm.doctorname|attr:'required:true' class="input--style-5"
-                                    %}
+                                    {{ patientForm.doctorname|attr:'class:input--style-5'|attr:'required:true' }}
                                 </div>
                             </div>
                         </div>
@@ -146,8 +153,7 @@
                             <div class="name">Profile Pic</div>
                             <div class="value">
                                 <div class="input-group">
-                                    {% render_field patientForm.profile_pic|attr:'required:true' class="input--style-5"
-                                    %}
+                                    {% render_field patientForm.profile_pic|attr:'required:true' class='input--style-5' %}
                                 </div>
                             </div>
                         </div>
@@ -159,13 +165,13 @@
                     <br>
                     <p style="text-align: center;">Already have an account ? <a style="text-decoration: none;"
                             href="/patient/patientlogin">Click here to login</a></p>
-
                 </div>
             </div>
         </div>
     </div>
 
     {% include "blood/footer.html" %}
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
