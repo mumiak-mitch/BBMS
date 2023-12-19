@@ -1,22 +1,19 @@
 # Uzima Blood Bank Management System
 
-
 ## Overview
 
 This is a Blood Bank Management System built using Django. It helps manage blood donation and distribution activities efficiently.
 
-
 ## Table of Contents
 
-- [Features](#features)
-- [Functions](#functions)
-- [Requirements](#requirements)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-
+- Features
+- Functions
+- Requirements
+- Installation
+- Configuration
+- Usage
+- Contributing
+- License
 
 ## Features
 
@@ -26,10 +23,15 @@ This is a Blood Bank Management System built using Django. It helps manage blood
 - Request and distribution of blood units
 - Reporting and analytics
 
+## Resources
+
+- Styling: Bootstrap.
+- Images: Pixabay.
 
 ## Functions
 
 ### Admin
+
 - After Login, can see Unit of blood of each blood group available, Number Of Donor, Number of blood request, Number of approved request, Total Unit of blood on Dashboard.
 - Can View, Update, Delete Donor.
 - Can View, Update, Delete Patient.
@@ -43,27 +45,28 @@ This is a Blood Bank Management System built using Django. It helps manage blood
 - Can Update Unit Of Particular Blood Group.
 
 ### Donor
+
 - Donor can create account by providing basic details.
 - After Login, Donor can donate blood, After approval from admin only, blood will be added to blood stock.
 - Donor can see their donation history with status (Pending, Approved, Rejected).
 - Donor can also request for blood from blood stock.
 - Donor can see their blood request history with status.
 - Donor can see number of blood request Made, Approved, Pending, Rejected by Admin on their dashboard.
+
 > **_NOTE:_**  Donor can donate blood and can also request for blood.
 
 ### Patient
+
 - Create account (No Approval Required By Admin, Can Login After Signup)
 - After Login, Can see number of blood request Made, Approved, Pending, Rejected by Admin on their dashboard.
 - Patient can request for blood of specific blood group and unit from blood stock.
 - Patient can see their blood request history with status (Pending, Approved, Rejected).
-
 
 ## Requirements
 
 - Python 3.x
 - Django 3.x
 - Other dependencies listed in requirements.txt
-
 
 ## Installation
 
